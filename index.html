@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>和soup curry・pasta AOHA | 島根・益田の和のスパイス</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="texture-bg">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-gray-100/50">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="#" class="text-xl font-serif tracking-widest font-bold flex items-center gap-3">
+                <span class="w-8 h-8 rounded-full bg-[var(--accent-color)] inline-block"></span>
+                AOHA
+            </a>
+            <div class="hidden md:flex space-x-10 text-xs font-medium tracking-[0.2em] uppercase">
+                <a href="#concept" class="nav-link">Concept</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#access" class="nav-link">Access</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=AOHA+益田市" target="_blank" class="nav-link text-[var(--secondary-color)]">Map</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="mobile-menu">
+        <button id="menu-close" class="absolute top-6 right-6 text-3xl">&times;</button>
+        <a href="#concept" class="text-2xl font-serif tracking-widest menu-item">Concept</a>
+        <a href="#menu" class="text-2xl font-serif tracking-widest menu-item">Menu</a>
+        <a href="#access" class="text-2xl font-serif tracking-widest menu-item">Access</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=AOHA+益田市" target="_blank" class="text-2xl font-serif tracking-widest menu-item">Map</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center px-6 md:px-12 py-24">
+        <div class="absolute inset-0 z-0 overflow-hidden md:m-6 rounded-custom shadow-2xl">
+            <img src="./img/top.jpeg" alt="Soup Curry Background" class="w-full h-full object-cover brightness-75 scale-105 transition-transform duration-[10s] ease-out" id="hero-img">
+            <div class="absolute inset-0 bg-black/20"></div>
+        </div>
+        <div class="relative z-10 text-center text-white max-w-4xl">
+            <div class="mb-12">
+                <p class="text-sm tracking-[0.5em] font-light fade-in uppercase mb-6">MASUDA / SHIMANE</p>
+                <div class="flex items-center justify-center gap-8 mb-8">
+                    <div class="h-px w-12 bg-white/50 hidden md:block"></div>
+                    <h1 class="text-3xl md:text-7xl font-serif leading-tight fade-in" style="transition-delay: 0.2s;">
+                        和の出汁が<br><span class="text-[var(--accent-color)]">スパイス</span>と出会う。
+                    </h1>
+                    <div class="h-px w-12 bg-white/50 hidden md:block"></div>
+                </div>
+            </div>
+            <div class="fade-in" style="transition-delay: 0.4s;">
+                <a href="#concept" class="btn-primary px-12 py-4 text-sm font-bold tracking-[0.2em]">VIEW OUR STORY</a>
+            </div>
+        </div>
+        
+        <!-- Decorative Vertical Text -->
+        <div class="hidden lg:block absolute right-12 bottom-12 z-10 fade-in" style="transition-delay: 0.6s;">
+            <p class="vertical-text text-white/70 text-sm font-serif">あおは、まわります。</p>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section id="concept" class="py-32 md:py-56 px-6 bg-white/50 relative overflow-hidden">
+        <!-- Subtle background text -->
+        <div class="absolute -left-20 top-20 text-[15rem] font-serif text-gray-100/50 select-none pointer-events-none vertical-text">AOHA</div>
+        
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-20">
+            <div class="w-full md:w-5/12 fade-in">
+                <div class="relative rounded-custom overflow-hidden shadow-2xl skew-y-1">
+                    <img src="./img/AOHA.png" alt="Interior" class="w-full aspect-[4/5] object-cover transition-transform duration-700 hover:scale-110">
+                </div>
+            </div>
+            <div class="w-full md:w-7/12 fade-in" style="transition-delay: 0.3s;">
+                <div class="relative pl-12">
+                    <div class="absolute left-0 top-0 bottom-0 w-px bg-[var(--accent-color)]/30"></div>
+                    <span class="text-[var(--accent-color)] text-xs font-bold tracking-[0.5em] block mb-8 uppercase">OUR PHILOSOPHY</span>
+                    <h2 class="text-4xl md:text-6xl font-serif mb-10 leading-tight">益田の風土を、<br><span class="text-[var(--secondary-color)]">一皿に凝縮して。</span></h2>
+                    <div class="space-y-8 text-gray-600 leading-loose text-lg font-light">
+                        <p>島根県益田市。豊かな海と山に囲まれたこの場所で、AOHA（アオハ）は生まれました。</p>
+                        <p>私たちが大切にしているのは、日本人がホッとする「和の出汁」の旨味。そこに厳選したスパイスを重ね、奥深いSoup Curryを完成させました。</p>
+                        <p>また、もちもちの食感にこだわったPastaも私たちの自慢です。</p>
+                        <p>お一人でも、大切な方とでも。日常を少しだけ彩る、特別な時間をお過ごしください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-28 fade-in">
+                <p class="text-[var(--accent-color)] text-xs tracking-[0.5em] mb-4 uppercase">Selection</p>
+                <h2 class="text-5xl md:text-6xl font-serif mb-6">お品書き</h2>
+                <div class="w-20 h-px bg-[var(--accent-color)]/30 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                <!-- Curry Column -->
+                <div class="space-y-16">
+                    <div class="flex items-center gap-6 mb-12 fade-in">
+                        <span class="text-3xl font-serif text-[var(--secondary-color)] italic">和 Soup Curry</span>
+                        <div class="flex-grow h-px bg-gray-100"></div>
+                    </div>
+                    
+                    <div class="menu-card bg-white p-6 rounded-custom shadow-xl shadow-gray-200/50 border border-gray-100 fade-in">
+                        <div class="aspect-[16/10] rounded-[3rem] overflow-hidden mb-8">
+                            <img src="./img/menu1.png" alt="Chicken Curry" class="w-full h-full object-cover">
+                        </div>
+                        <div class="px-4 pb-4">
+                            <h3 class="text-2xl font-bold mb-4">チキンと色とりどり野菜</h3>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">ホロホロに煮込んだチキンと、益田近郊で採れた新鮮な素揚げ野菜。和出汁の香りが際立つ一番人気のメニュー。</p>
+                            <p class="font-serif text-2xl text-[var(--accent-color)]">¥1,380</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-card bg-white p-6 rounded-custom shadow-xl shadow-gray-200/50 border border-gray-100 fade-in" style="transition-delay: 0.1s;">
+                        <div class="aspect-[16/10] rounded-[3rem] overflow-hidden mb-8">
+                            <img src="./img/menu2.png" alt="Vegetable Curry" class="w-full h-full object-cover">
+                        </div>
+                        <div class="px-4 pb-4">
+                            <h3 class="text-2xl font-bold mb-4">15種のスパイスベジタブル</h3>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">動物性エキスを使わず、昆布としいたけの出出しをベースにしたヘルシーな一皿。野菜の甘みが溶け込んでいます。</p>
+                            <p class="font-serif text-2xl text-[var(--accent-color)]">¥1,250</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pasta Column -->
+                <div class="space-y-16 lg:mt-24">
+                    <div class="flex items-center gap-6 mb-12 fade-in">
+                        <span class="text-3xl font-serif text-[var(--secondary-color)] italic">Pasta</span>
+                        <div class="flex-grow h-px bg-gray-100"></div>
+                    </div>
+
+                    <div class="menu-card bg-white p-6 rounded-custom shadow-xl shadow-gray-200/50 border border-gray-100 fade-in" style="transition-delay: 0.2s;">
+                        <div class="aspect-[16/10] rounded-[3rem] overflow-hidden mb-8">
+                            <img src="./img/menu3.png" alt="Seafood Pasta" class="w-full h-full object-cover">
+                        </div>
+                        <div class="px-4 pb-4">
+                            <h3 class="text-2xl font-bold mb-4">和出汁のボンゴレビアンコ</h3>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">あさりの旨味に鰹出汁を隠し味に加えた、AOHA流の和パスタ。刻み大葉の香りが爽やかです。</p>
+                            <p class="font-serif text-2xl text-[var(--accent-color)]">¥1,180</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-card bg-white p-6 rounded-custom shadow-xl shadow-gray-200/50 border border-gray-100 fade-in" style="transition-delay: 0.3s;">
+                        <div class="aspect-[16/10] rounded-[3rem] overflow-hidden mb-8">
+                            <img src="./img/menu4.png" alt="Cream Pasta" class="w-full h-full object-cover">
+                        </div>
+                        <div class="px-4 pb-4">
+                            <h3 class="text-2xl font-bold mb-4">柚子胡椒薫る海老クリーム</h3>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">濃厚なクリームソースに柚子胡椒のピリッとした刺激をプラス。女性に人気の高い創作パスタです。</p>
+                            <p class="font-serif text-2xl text-[var(--accent-color)]">¥1,320</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info & Access Section -->
+    <section id="access" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="bg-[var(--secondary-color)] rounded-custom p-10 md:p-24 text-white flex flex-col lg:flex-row gap-20 overflow-hidden relative">
+            <!-- Decorative circle -->
+            <div class="absolute -right-20 -top-20 w-80 h-80 bg-white/5 rounded-full"></div>
+            <div class="absolute -left-10 bottom-20 w-40 h-40 bg-white/5 rounded-full"></div>
+            
+            <div class="w-full lg:w-1/2 fade-in z-10">
+                <span class="text-[var(--accent-color)] text-xs font-bold tracking-[0.4em] block mb-8 uppercase">VISIT US</span>
+                <h2 class="text-4xl md:text-5xl font-serif mb-16 leading-tight">お越しを心より<br>お待ちしております。</h2>
+                <div class="space-y-12">
+                    <div class="group">
+                        <p class="text-white/40 text-[10px] tracking-[0.3em] mb-4 uppercase">Address</p>
+                        <p class="text-xl md:text-2xl font-light">〒698-0024 島根県益田市あけぼの東町1-1</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <span class="text-sm text-white/60">益田駅から徒歩約10分 / 駐車場完備</span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=AOHA+益田市" target="_blank" class="text-xs border-b border-white/30 pb-0.5 hover:text-[var(--accent-color)] hover:border-[var(--accent-color)] transition-all">Google Maps</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-white/40 text-[10px] tracking-[0.3em] mb-4 uppercase">Business Hours</p>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between max-w-xs transition-transform hover:translate-x-2">
+                                <span class="text-sm text-white/60">Lunch</span>
+                                <span class="text-xl font-serif tracking-widest">11:00 - 15:00</span>
+                            </div>
+                            <div class="flex justify-between max-w-xs transition-transform hover:translate-x-2">
+                                <span class="text-sm text-white/60">Dinner</span>
+                                <span class="text-xl font-serif tracking-widest">17:30 - 21:00</span>
+                            </div>
+                        </div>
+                        <p class="text-sm text-[var(--accent-color)] mt-6 font-bold tracking-widest">定休日：火曜日</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w-full lg:w-1/2 fade-in rounded-[3rem] overflow-hidden bg-white/5 h-[450px] shadow-2xl z-10">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.0348783067493!2d131.8393190760145!3d34.67906918437275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355b1f80f7f2cf19%3A0x32761930f360d5b9!2s%E5%92%8Csoup%20curry-pasta%20AOHA!5e0!3m2!1sja!2sjp!4v1774081621583!5m2!1sja!2sjp" width="100%" height="100%" style="border:0; filter: grayscale(1) invert(0.9) contrast(1.2);" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-32 border-t border-gray-100 bg-[var(--bg-color)]">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="mb-16">
+                <a href="#" class="text-3xl font-serif tracking-[0.3em] font-bold block mb-4">AOHA</a>
+                <p class="text-gray-400 text-xs tracking-[0.4em] uppercase">Masuda, Shimane / Japan</p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-x-12 gap-y-6 text-sm font-medium text-gray-500 mb-16 px-4">
+                <a href="#concept" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">想い</a>
+                <a href="#menu" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">お品書き</a>
+                <a href="#access" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">アクセス</a>
+                <a href="#" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">Instagram</a>
+            </div>
+
+            <div class="flex justify-center flex-col items-center gap-8">
+                <div class="w-px h-12 bg-gray-200"></div>
+                <p class="text-[10px] text-gray-300 tracking-[0.5em] uppercase">&copy; 2024 AOHA Masuda. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        const closeMenu = () => {
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        };
+
+        menuClose.addEventListener('click', closeMenu);
+        menuItems.forEach(item => item.addEventListener('click', closeMenu));
+
+        // Hero Parallax Effect
+        window.addEventListener('scroll', () => {
+            const heroImg = document.getElementById('hero-img');
+            const scroll = window.pageYOffset;
+            if (heroImg) {
+                heroImg.style.transform = `scale(${1.05 + scroll * 0.0001}) translateY(${scroll * 0.1}px)`;
+            }
+        });
+
+        // Smooth Scroll for local links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navigation visibility on scroll (Show/Hide)
+        let lastScroll = 0;
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 100) {
+                nav.style.transform = 'translateY(0)';
+                nav.classList.remove('shadow-lg');
+                return;
+            }
+            
+            if (currentScroll > lastScroll) {
+                // Scroll down
+                nav.style.transform = 'translateY(-100%)';
+            } else {
+                // Scroll up
+                nav.style.transform = 'translateY(0)';
+                nav.classList.add('shadow-lg');
+            }
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>
