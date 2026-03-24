@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お品書き - Menu | 和soup curry・pasta AOHA | 益田市のスープカレーとパスタ</title>
+    <meta name="description" content="和soup curry・pasta AOHAのグランドメニュー。和の出汁が香るスープカレーから、こだわりのパスタ、期間限定の蟹メニューまで。益田市でのランチ・ディナーに。">
+    <meta name="keywords" content="AOHA, メニュー, スープカレー, パスタ, 蟹, 益田市, 島根県, ランチ, ディナー">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://aoha-masuda.com/menu.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://aoha-masuda.com/menu.html">
+    <meta property="og:title" content="お品書き - Menu | 和soup curry・pasta AOHA">
+    <meta property="og:description" content="和風出汁スープカレーとパスタの全メニューをご覧いただけます。">
+    <meta property="og:image" content="https://aoha-masuda.com/img/menu1.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aoha-masuda.com/menu.html">
+    <meta property="twitter:title" content="お品書き - Menu | 和soup curry・pasta AOHA">
+    <meta property="twitter:description" content="和風出汁スープカレーとパスタの全メニューをご覧いただけます。">
+    <meta property="twitter:image" content="https://aoha-masuda.com/img/menu1.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .menu-list-item {
+            transition: all 0.3s ease;
+        }
+        .menu-list-item:hover {
+            transform: translateX(10px);
+            background-color: rgba(255,255,255,0.5);
+            border-radius: 1rem;
+            padding: 0.5rem 1rem;
+            margin: -0.5rem -1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+        .leader-dots {
+            border-bottom: 2px dotted #e5e7eb;
+            margin: 0 1rem;
+            flex-grow: 1;
+            position: relative;
+            top: -0.5rem;
+        }
+    </style>
+</head>
+<body class="texture-bg">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-gray-100/50 transition-transform duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex items-center transition-opacity hover:opacity-80">
+                <img src="./img/aoha-logo.svg" alt="AOHA" class="h-10 md:h-12 w-auto">
+            </a>
+            <div class="hidden md:flex space-x-10 text-xs font-medium tracking-[0.2em] uppercase">
+                <a href="index.html#concept" class="nav-link">Concept</a>
+                <a href="menu.html" class="nav-link text-[var(--accent-color)]" style="border-bottom: 1px solid var(--accent-color);">Menu</a>
+                <a href="index.html#access" class="nav-link">Access</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=AOHA+益田市" target="_blank" class="nav-link text-[var(--secondary-color)]">Map</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="mobile-menu">
+        <button id="menu-close" class="absolute top-6 right-6 text-3xl">&times;</button>
+        <a href="index.html#concept" class="text-2xl font-serif tracking-widest menu-item">Concept</a>
+        <a href="menu.html" class="text-2xl font-serif tracking-widest menu-item text-[var(--accent-color)]">Menu</a>
+        <a href="index.html#access" class="text-2xl font-serif tracking-widest menu-item">Access</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=AOHA+益田市" target="_blank" class="text-2xl font-serif tracking-widest menu-item">Map</a>
+    </div>
+
+    <!-- Page Header -->
+    <header class="pt-40 pb-20 px-6 fade-in">
+        <div class="text-center">
+            <p class="text-[var(--accent-color)] text-xs tracking-[0.5em] mb-4 uppercase">Grand Menu</p>
+            <h1 class="text-5xl md:text-6xl font-serif mb-6">お品書き</h1>
+            <div class="w-12 h-px bg-[var(--accent-color)]/50 mx-auto"></div>
+        </div>
+    </header>
+
+    <!-- Menu Content -->
+    <main class="py-4 px-6 max-w-4xl mx-auto space-y-24 mb-32">
+        
+        <!-- Soup Curry -->
+        <section class="fade-in">
+            <div class="flex items-center gap-6 mb-8">
+                <h2 class="text-3xl font-serif text-[var(--secondary-color)]">🍛 スープカレー (SOUP CURRY)</h2>
+                <div class="flex-grow h-px bg-gray-200"></div>
+            </div>
+            <div class="bg-white/80 p-8 md:p-12 rounded-custom shadow-xl shadow-gray-200/50 border border-white">
+                <p class="text-sm text-gray-600 mb-8 font-medium bg-gray-50 inline-block px-4 py-2 rounded-full">※全てのメニューに「サラダ・ドリンク」付き。+650円でデザート付き。</p>
+                <div class="space-y-6">
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">AOHAスープ</h3>
+                            <p class="text-sm text-gray-500 mt-1">煮豚、エビフライ、素揚げ野菜5種</p>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,600円</div>
+                    </div>
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">手ごねハンバーグスープ</h3>
+                            <p class="text-sm text-gray-500 mt-1">炙りチーズ、木の子、野菜5種</p>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,900円</div>
+                    </div>
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">漁師スープ</h3>
+                            <p class="text-sm text-gray-500 mt-1">有頭エビ、ホタテ、ムール貝、アサリ、イカ、とびっこ、野菜5種</p>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,870円</div>
+                    </div>
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">牛ホルモンスープ</h3>
+                            <p class="text-sm text-gray-500 mt-1">牛マルチョウ、ニンニク、ニラ、唐辛子、野菜5種</p>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,900円</div>
+                    </div>
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">チキン煮込み</h3>
+                            <p class="text-sm text-gray-500 mt-1">手羽元2本、野菜5種</p>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,400円</div>
+                    </div>
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">シーフード</h3>
+                            <p class="text-sm text-gray-500 mt-1">エビ、ホタテ、ムール貝、アサリ、野菜5種</p>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,500円</div>
+                    </div>
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">ポークカツ</h3>
+                            <p class="text-sm text-gray-500 mt-1">ポークカツ、野菜5種</p>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,500円</div>
+                    </div>
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">鶏と季節野菜豆乳</h3>
+                            <p class="text-sm text-gray-500 mt-1">手羽元2本、野菜5種、豆乳スープ</p>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,500円</div>
+                    </div>
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">【数量限定】イベリコ豚中落ち煮込み とろ〜りカレー</h3>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,800円</div>
+                    </div>
+                </div>
+
+                <!-- Toppings -->
+                <div class="mt-12 pt-8 border-t border-gray-200/60">
+                    <h4 class="text-lg font-bold mb-4 font-serif">トッピング</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-8 text-sm text-gray-700">
+                        <div class="flex justify-between items-center"><span class="flex items-center before:content-[''] before:w-1.5 before:h-1.5 before:bg-[var(--accent-color)] before:rounded-full before:mr-2">半熟卵丸々1個</span> <span class="font-bold">100円</span></div>
+                        <div class="flex justify-between items-center"><span class="flex items-center before:content-[''] before:w-1.5 before:h-1.5 before:bg-[var(--accent-color)] before:rounded-full before:mr-2">エビフライ1本</span> <span class="font-bold">600円</span></div>
+                        <div class="flex justify-between items-center"><span class="flex items-center before:content-[''] before:w-1.5 before:h-1.5 before:bg-[var(--accent-color)] before:rounded-full before:mr-2">チキン1枚揚げ</span> <span class="font-bold">800円</span></div>
+                        <div class="flex justify-between items-center"><span class="flex items-center before:content-[''] before:w-1.5 before:h-1.5 before:bg-[var(--accent-color)] before:rounded-full before:mr-2">ポークカツ</span> <span class="font-bold">800円</span></div>
+                        <div class="flex justify-between items-center"><span class="flex items-center before:content-[''] before:w-1.5 before:h-1.5 before:bg-[var(--accent-color)] before:rounded-full before:mr-2">チキン煮込み</span> <span class="font-bold">600円</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pasta -->
+        <section class="fade-in">
+            <div class="flex items-center gap-6 mb-8">
+                <h2 class="text-3xl font-serif text-[var(--secondary-color)]">🍝 パスタ (PASTA)</h2>
+                <div class="flex-grow h-px bg-gray-200"></div>
+            </div>
+            <div class="bg-white/80 p-8 md:p-12 rounded-custom shadow-xl shadow-gray-200/50 border border-white">
+                <p class="text-sm text-gray-600 mb-8 font-medium bg-gray-50 inline-block px-4 py-2 rounded-full">※全てのメニューに「サラダ・ドリンク」付き。+650円でデザート付き。</p>
+                <div class="space-y-6">
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">ペスカトーレ</h3>
+                            <p class="text-sm text-gray-500 mt-1">有頭海老、ホタテ、アサリ、ムール貝、とびっこ、イカ、トマトソース</p>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,900円</div>
+                    </div>
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">ボロネーゼ</h3>
+                            <p class="text-sm text-gray-500 mt-1">合い挽きミンチと野菜、赤ワイン煮込み、トマトソース</p>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,650円</div>
+                    </div>
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">魚介オイル</h3>
+                            <p class="text-sm text-gray-500 mt-1">海老、ホタテ、アサリ、イカ、アーリオオーリオベース</p>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,800円</div>
+                    </div>
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">真イカと季節野菜ペペロンチーノ</h3>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,900円</div>
+                    </div>
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">大山鶏セセリカレーソース</h3>
+                            <p class="text-sm text-gray-500 mt-1">季節野菜、豆乳、カレーベース</p>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,900円</div>
+                    </div>
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">ホタテ明太クリーム</h3>
+                            <p class="text-sm text-gray-500 mt-1">季節野菜、明太ソース、生クリーム</p>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,900円</div>
+                    </div>
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">生ハムゴルゴンゾーラ</h3>
+                            <p class="text-sm text-gray-500 mt-1">生ハム、木の子、生クリーム</p>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">1,900円</div>
+                    </div>
+                    <div class="menu-list-item flex flex-col sm:flex-row justify-between sm:items-baseline border-b sm:border-b-0 border-gray-100 pb-4 sm:pb-0">
+                        <div class="pr-2">
+                            <h3 class="text-xl font-bold">海老トマトクリーム</h3>
+                            <p class="text-sm text-gray-500 mt-1">海老、季節野菜、トマトクリームソース</p>
+                        </div>
+                        <div class="hidden sm:block leader-dots"></div>
+                        <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">2,000円</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Crab Menu -->
+        <section class="fade-in">
+            <div class="flex items-center gap-6 mb-8">
+                <h2 class="text-3xl font-serif text-[var(--secondary-color)]">🦀 蟹メニュー <span class="text-xl font-sans text-gray-600 ml-2">（北海道産オオズワイガニ）</span></h2>
+                <div class="flex-grow h-px bg-gray-200"></div>
+            </div>
+            <div class="bg-[var(--secondary-color)]/5 p-8 md:p-12 rounded-custom shadow-xl shadow-[var(--secondary-color)]/10 border border-[var(--secondary-color)]/20 relative overflow-hidden">
+                <!-- Decorative element -->
+                <div class="absolute -right-6 -top-6 w-32 h-32 rounded-full bg-[var(--secondary-color)]/5"></div>
+                <div class="relative z-10">
+                    <p class="text-sm text-red-600 mb-8 font-bold flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                        ※調理にお時間がかかるため予約推奨。仕入れにより終了の可能性あり。
+                    </p>
+                    <div class="space-y-6">
+                        <div class="menu-list-item flex justify-between items-baseline border-b border-[var(--secondary-color)]/10 pb-4">
+                            <div class="pr-2">
+                                <h3 class="text-xl font-bold">スープカレー オオズワイガニの特別漁師<span class="text-sm ml-2 text-gray-600">（蟹1/2杯）</span></h3>
+                            </div>
+                            <div class="hidden sm:block border-b-2 border-dotted border-[var(--secondary-color)]/20 mx-4 flex-grow relative top-[-8px]"></div>
+                            <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">2,800円</div>
+                        </div>
+                        <div class="menu-list-item flex justify-between items-baseline border-b border-[var(--secondary-color)]/10 pb-4">
+                            <div class="pr-2">
+                                <h3 class="text-xl font-bold">スープカレー オオズワイガニ丸ごと1杯</h3>
+                            </div>
+                            <div class="hidden sm:block border-b-2 border-dotted border-[var(--secondary-color)]/20 mx-4 flex-grow relative top-[-8px]"></div>
+                            <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">3,800円</div>
+                        </div>
+                        <div class="menu-list-item flex justify-between items-baseline border-b border-[var(--secondary-color)]/10 pb-4">
+                            <div class="pr-2">
+                                <h3 class="text-xl font-bold">パスタ オオズワイガニのトマトクリーム<span class="text-sm ml-2 text-gray-600">（蟹1/2杯）</span></h3>
+                            </div>
+                            <div class="hidden sm:block border-b-2 border-dotted border-[var(--secondary-color)]/20 mx-4 flex-grow relative top-[-8px]"></div>
+                            <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">2,800円</div>
+                        </div>
+                        <div class="menu-list-item flex justify-between items-baseline border-b border-[var(--secondary-color)]/10 pb-4">
+                            <div class="pr-2">
+                                <h3 class="text-xl font-bold">パスタ オオズワイガニの味噌パスタ<span class="text-sm ml-2 text-gray-600">（蟹1/2杯）</span></h3>
+                            </div>
+                            <div class="hidden sm:block border-b-2 border-dotted border-[var(--secondary-color)]/20 mx-4 flex-grow relative top-[-8px]"></div>
+                            <div class="text-xl font-serif text-[var(--accent-color)] font-bold whitespace-nowrap mt-2 sm:mt-0">2,800円</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- A La Carte -->
+        <section class="fade-in">
+            <div class="flex items-center gap-6 mb-8">
+                <h2 class="text-3xl font-serif text-[var(--secondary-color)]">🥗 アラカルト (A LA CARTE)</h2>
+                <div class="flex-grow h-px bg-gray-200"></div>
+            </div>
+            <div class="bg-white/80 p-8 md:p-12 rounded-custom shadow-xl shadow-gray-200/50 border border-white">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+                    <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+                        <span class="font-bold text-lg">フライドポテト</span>
+                        <span class="font-serif text-[var(--accent-color)] font-bold">660円</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+                        <span class="font-bold text-lg">オニオン</span>
+                        <span class="font-serif text-[var(--accent-color)] font-bold">800円</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+                        <span class="font-bold text-lg">鶏の唐揚げ</span>
+                        <span class="font-serif text-[var(--accent-color)] font-bold">700円</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+                        <span class="font-bold text-lg">シュリンプサラダ</span>
+                        <span class="font-serif text-[var(--accent-color)] font-bold">750円</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+                        <span class="font-bold text-lg">チーズオムレツ</span>
+                        <span class="font-serif text-[var(--accent-color)] font-bold">800円</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+                        <span class="font-bold text-lg">ジャンボエビフライ</span>
+                        <span class="font-serif text-[var(--accent-color)] font-bold">800円</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Drink & Dessert -->
+        <section class="fade-in">
+            <div class="flex items-center gap-6 mb-8">
+                <h2 class="text-3xl font-serif text-[var(--secondary-color)]">☕️ ドリンク・デザート</h2>
+                <div class="flex-grow h-px bg-gray-200"></div>
+            </div>
+            
+            <!-- Set Drink -->
+            <div class="bg-white/80 p-8 md:p-12 rounded-3xl shadow-lg shadow-gray-200/50 border border-white mb-8">
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[var(--accent-color)]"></span>セットドリンク
+                    <span class="text-sm font-normal text-gray-500 ml-2">（お食事注文で1杯サービス）</span>
+                </h3>
+                <p class="text-gray-700 leading-relaxed mb-4">ホットコーヒー、ホット紅茶、アイスコーヒー、アイス紅茶、アイスウーロン茶、ジンジャーエール、コカ・コーラゼロ、美酢ドリンク</p>
+                <p class="text-sm font-bold text-gray-500">※おかわりは 330円</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Cafe & Soft -->
+                <div class="bg-white/80 p-8 rounded-3xl shadow-lg shadow-gray-200/50 border border-white">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-[var(--secondary-color)]"></span>カフェ・ソフトドリンク <span class="text-sm font-normal text-gray-500">（単品）</span>
+                    </h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>ホットコーヒー / 紅茶</span> <span class="font-bold">550円</span></li>
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>アイスコーヒー</span> <span class="font-bold">600円</span></li>
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>コーヒーフロート</span> <span class="font-bold">780円</span></li>
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>ウーロン茶 / ジンジャーエール</span> <span class="font-bold">500円</span></li>
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>マンゴーソーダ / マンゴーミルク</span> <span class="font-bold">750円</span></li>
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>美酢ジュース</span> <span class="font-bold">650円</span></li>
+                        <li class="flex justify-between pb-2"><span>マンゴーラッシー</span> <span class="font-bold">500円</span></li>
+                    </ul>
+                </div>
+
+                <!-- Alcohol -->
+                <div class="bg-white/80 p-8 rounded-3xl shadow-lg shadow-gray-200/50 border border-white">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-[var(--accent-color)]"></span>アルコール
+                    </h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>ビール（瓶）</span> <span class="font-bold">750円</span></li>
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span class="pr-4 leading-relaxed">ハイボール / サワー各種 / 焼酎（麦・芋）/ グラスワイン（赤・白）</span> <span class="font-bold whitespace-nowrap pt-1">650円</span></li>
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>果実酒・カクテル（ワインクーラー等）</span> <span class="font-bold">650円</span></li>
+                        <li class="flex justify-between pb-2"><span class="pr-4 leading-relaxed">ノンアルコール<br><span class="text-xs text-gray-500">（零ICHI / スパークリング / フルーツビール）</span></span> <span class="font-bold whitespace-nowrap self-end">550円〜650円</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-32 border-t border-gray-100 bg-[var(--bg-color)]">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="mb-16">
+                <a href="index.html" class="text-3xl font-serif tracking-[0.3em] font-bold block mb-4">AOHA</a>
+                <p class="text-gray-400 text-xs tracking-[0.4em] uppercase">Masuda, Shimane / Japan</p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-x-12 gap-y-6 text-sm font-medium text-gray-500 mb-16 px-4">
+                <a href="index.html#concept" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">想い</a>
+                <a href="menu.html" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">お品書き</a>
+                <a href="index.html#access" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">アクセス</a>
+                <a href="#" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">Instagram</a>
+            </div>
+
+            <div class="flex justify-center flex-col items-center gap-8">
+                <div class="w-px h-12 bg-gray-200"></div>
+                <p class="text-[10px] text-gray-300 tracking-[0.5em] uppercase">&copy; 2024 AOHA Masuda. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        const closeMenu = () => {
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        };
+
+        menuClose.addEventListener('click', closeMenu);
+        menuItems.forEach(item => item.addEventListener('click', closeMenu));
+
+        // Navigation visibility on scroll
+        let lastScroll = 0;
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 100) {
+                nav.style.transform = 'translateY(0)';
+                nav.classList.remove('shadow-lg');
+                return;
+            }
+            
+            if (currentScroll > lastScroll) {
+                nav.style.transform = 'translateY(-100%)';
+            } else {
+                nav.style.transform = 'translateY(0)';
+                nav.classList.add('shadow-lg');
+            }
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>

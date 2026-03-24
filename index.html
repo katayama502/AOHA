@@ -3,25 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>和soup curry・pasta AOHA | 島根・益田の和のスパイス</title>
+    <title>和soup curry・pasta AOHA | 島根・益田の和の出汁スープカレーとパスタ</title>
+    <meta name="description" content="島根県益田市の「和soup curry・pasta AOHA」。和の出汁とスパイスが融合した絶品スープカレーともちもち食感のパスタを提供しています。落ち着いた空間で特別なひとときを。">
+    <meta name="keywords" content="AOHA, あおは, スープカレー, パスタ, 益田市, 島根県, 和出汁, ランチ, ディナー">
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://aoha-masuda.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aoha-masuda.com/">
+    <meta property="og:title" content="和soup curry・pasta AOHA | 島根・益田の和の出汁スープカレーとパスタ">
+    <meta property="og:description" content="島根県益田市で味わう、和の出汁とスパイスが織りなす究極のスープカレー。">
+    <meta property="og:image" content="https://aoha-masuda.com/img/top.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aoha-masuda.com/">
+    <meta property="twitter:title" content="和soup curry・pasta AOHA | 島根・益田の和の出汁スープカレーとパスタ">
+    <meta property="twitter:description" content="島根県益田市で味わう、和の出汁とスパイスが織りなす究極のスープカレー。">
+    <meta property="twitter:image" content="https://aoha-masuda.com/img/top.jpeg">
+
+    <!-- Favicon (Suggestion: Place favicon.ico in root) -->
+    <link rel="icon" href="/favicon.ico">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "和soup curry・pasta AOHA",
+      "image": "https://aoha-masuda.com/img/top.jpeg",
+      "url": "https://aoha-masuda.com/",
+      "telephone": "0856-25-7123",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "あけぼの東町1-1",
+        "addressLocality": "益田市",
+        "addressRegion": "島根県",
+        "postalCode": "698-0024",
+        "addressCountry": "JP"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.679069,
+        "longitude": 131.839319
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "11:00",
+          "closes": "15:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "17:30",
+          "closes": "21:00"
+        }
+      ],
+      "menu": "https://aoha-masuda.com/menu.html",
+      "servesCuisine": ["Soup Curry", "Pasta"],
+      "priceRange": "¥1,000 - ¥3,000"
+    }
+    </script>
 </head>
 <body class="texture-bg">
 
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 glass-nav border-b border-gray-100/50">
         <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-            <a href="#" class="text-xl font-serif tracking-widest font-bold flex items-center gap-3">
-                <span class="w-8 h-8 rounded-full bg-[var(--accent-color)] inline-block"></span>
-                AOHA
+            <a href="#" class="flex items-center transition-opacity hover:opacity-80">
+                <img src="./img/aoha-logo.svg" alt="AOHA" class="h-10 md:h-12 w-auto"> AOHA
             </a>
             <div class="hidden md:flex space-x-10 text-xs font-medium tracking-[0.2em] uppercase">
                 <a href="#concept" class="nav-link">Concept</a>
-                <a href="#menu" class="nav-link">Menu</a>
+                <a href="menu.html" class="nav-link">Menu</a>
                 <a href="#access" class="nav-link">Access</a>
                 <a href="https://www.google.com/maps/search/?api=1&query=AOHA+益田市" target="_blank" class="nav-link text-[var(--secondary-color)]">Map</a>
             </div>
@@ -33,7 +111,7 @@
     <div id="mobile-menu-overlay" class="mobile-menu">
         <button id="menu-close" class="absolute top-6 right-6 text-3xl">&times;</button>
         <a href="#concept" class="text-2xl font-serif tracking-widest menu-item">Concept</a>
-        <a href="#menu" class="text-2xl font-serif tracking-widest menu-item">Menu</a>
+        <a href="menu.html" class="text-2xl font-serif tracking-widest menu-item">Menu</a>
         <a href="#access" class="text-2xl font-serif tracking-widest menu-item">Access</a>
         <a href="https://www.google.com/maps/search/?api=1&query=AOHA+益田市" target="_blank" class="text-2xl font-serif tracking-widest menu-item">Map</a>
     </div>
@@ -98,7 +176,7 @@
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-28 fade-in">
                 <p class="text-[var(--accent-color)] text-xs tracking-[0.5em] mb-4 uppercase">Selection</p>
-                <h2 class="text-5xl md:text-6xl font-serif mb-6">お品書き</h2>
+                <h2 class="text-5xl md:text-6xl font-serif mb-6">おすすめ</h2>
                 <div class="w-20 h-px bg-[var(--accent-color)]/30 mx-auto"></div>
             </div>
 
@@ -112,23 +190,23 @@
                     
                     <div class="menu-card bg-white p-6 rounded-custom shadow-xl shadow-gray-200/50 border border-gray-100 fade-in">
                         <div class="aspect-[16/10] rounded-[3rem] overflow-hidden mb-8">
-                            <img src="./img/menu1.png" alt="Chicken Curry" class="w-full h-full object-cover">
+                            <img src="./img/menu1.png" alt="AOHAスープ" class="w-full h-full object-cover">
                         </div>
                         <div class="px-4 pb-4">
-                            <h3 class="text-2xl font-bold mb-4">チキンと色とりどり野菜</h3>
-                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">ホロホロに煮込んだチキンと、益田近郊で採れた新鮮な素揚げ野菜。和出汁の香りが際立つ一番人気のメニュー。</p>
-                            <p class="font-serif text-2xl text-[var(--accent-color)]">¥1,380</p>
+                            <h3 class="text-2xl font-bold mb-4">AOHAスープ</h3>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">煮豚、エビフライ、素揚げ野菜5種が入った当店こだわりの一杯。</p>
+                            <p class="font-serif text-2xl text-[var(--accent-color)]">¥1,600</p>
                         </div>
                     </div>
 
                     <div class="menu-card bg-white p-6 rounded-custom shadow-xl shadow-gray-200/50 border border-gray-100 fade-in" style="transition-delay: 0.1s;">
                         <div class="aspect-[16/10] rounded-[3rem] overflow-hidden mb-8">
-                            <img src="./img/menu2.png" alt="Vegetable Curry" class="w-full h-full object-cover">
+                            <img src="./img/menu2.png" alt="手ごねハンバーグスープ" class="w-full h-full object-cover">
                         </div>
                         <div class="px-4 pb-4">
-                            <h3 class="text-2xl font-bold mb-4">15種のスパイスベジタブル</h3>
-                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">動物性エキスを使わず、昆布としいたけの出出しをベースにしたヘルシーな一皿。野菜の甘みが溶け込んでいます。</p>
-                            <p class="font-serif text-2xl text-[var(--accent-color)]">¥1,250</p>
+                            <h3 class="text-2xl font-bold mb-4">手ごねハンバーグスープ</h3>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">炙りチーズ、木の子、野菜5種と手ごねハンバーグの絶妙な組み合わせ。</p>
+                            <p class="font-serif text-2xl text-[var(--accent-color)]">¥1,900</p>
                         </div>
                     </div>
                 </div>
@@ -142,26 +220,33 @@
 
                     <div class="menu-card bg-white p-6 rounded-custom shadow-xl shadow-gray-200/50 border border-gray-100 fade-in" style="transition-delay: 0.2s;">
                         <div class="aspect-[16/10] rounded-[3rem] overflow-hidden mb-8">
-                            <img src="./img/menu3.png" alt="Seafood Pasta" class="w-full h-full object-cover">
+                            <img src="./img/menu3.png" alt="ペスカトーレ" class="w-full h-full object-cover">
                         </div>
                         <div class="px-4 pb-4">
-                            <h3 class="text-2xl font-bold mb-4">和出汁のボンゴレビアンコ</h3>
-                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">あさりの旨味に鰹出汁を隠し味に加えた、AOHA流の和パスタ。刻み大葉の香りが爽やかです。</p>
-                            <p class="font-serif text-2xl text-[var(--accent-color)]">¥1,180</p>
+                            <h3 class="text-2xl font-bold mb-4">ペスカトーレ</h3>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">有頭海老、ホタテ、アサリ、ムール貝、とびっこ、イカが入った贅沢トマトソース。</p>
+                            <p class="font-serif text-2xl text-[var(--accent-color)]">¥1,900</p>
                         </div>
                     </div>
 
                     <div class="menu-card bg-white p-6 rounded-custom shadow-xl shadow-gray-200/50 border border-gray-100 fade-in" style="transition-delay: 0.3s;">
                         <div class="aspect-[16/10] rounded-[3rem] overflow-hidden mb-8">
-                            <img src="./img/menu4.png" alt="Cream Pasta" class="w-full h-full object-cover">
+                            <img src="./img/menu4.png" alt="海老トマトクリーム" class="w-full h-full object-cover">
                         </div>
                         <div class="px-4 pb-4">
-                            <h3 class="text-2xl font-bold mb-4">柚子胡椒薫る海老クリーム</h3>
-                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">濃厚なクリームソースに柚子胡椒のピリッとした刺激をプラス。女性に人気の高い創作パスタです。</p>
-                            <p class="font-serif text-2xl text-[var(--accent-color)]">¥1,320</p>
+                            <h3 class="text-2xl font-bold mb-4">海老トマトクリーム</h3>
+                            <p class="text-gray-500 text-sm mb-6 leading-relaxed">たっぷり海老と季節野菜が入った、まろやかで奥深い味わいの特製パスタ。</p>
+                            <p class="font-serif text-2xl text-[var(--accent-color)]">¥2,000</p>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="text-center mt-20 fade-in flex justify-center" style="transition-delay: 0.4s;">
+                <a href="menu.html" class="btn-primary inline-flex items-center gap-2 hover:translate-x-1 transition-transform">
+                    <span>すべてのメニューを見る</span>
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
             </div>
         </div>
     </section>
@@ -218,7 +303,7 @@
             
             <div class="flex flex-wrap justify-center gap-x-12 gap-y-6 text-sm font-medium text-gray-500 mb-16 px-4">
                 <a href="#concept" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">想い</a>
-                <a href="#menu" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">お品書き</a>
+                <a href="menu.html" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">お品書き</a>
                 <a href="#access" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">アクセス</a>
                 <a href="#" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">Instagram</a>
             </div>
