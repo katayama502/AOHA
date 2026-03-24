@@ -53,7 +53,17 @@
         }
     </style>
 </head>
-<body class="texture-bg">
+<body class="texture-bg relative">
+
+    <!-- Floating Background Layout -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden flex justify-center items-center" style="z-index: 0;">
+        <img src="./img/2.png" alt="" class="absolute w-[30vh] h-[30vh] object-cover rounded-full opacity-[0.12] blur-[1px] floating-1" style="top: 10%; left: 5%;">
+        <img src="./img/5.png" alt="" class="absolute w-[40vh] h-[40vh] object-cover rounded-full opacity-[0.08] blur-[2px] floating-2" style="top: 30%; right: -5%;">
+        <img src="./img/8.png" alt="" class="absolute w-[35vh] h-[35vh] object-cover rounded-full opacity-[0.15] blur-[1px] floating-3" style="bottom: 10%; left: -5%;">
+        <img src="./img/12.png" alt="" class="absolute w-[50vh] h-[50vh] object-cover rounded-full opacity-[0.08] blur-[3px] floating-1" style="bottom: -15%; right: 15%;">
+        <img src="./img/14.png" alt="" class="absolute w-[25vh] h-[25vh] object-cover rounded-full opacity-[0.1] blur-[2px] floating-2" style="top: 15%; right: 25%;">
+        <img src="./img/16.png" alt="" class="absolute w-[35vh] h-[35vh] object-cover rounded-full opacity-[0.12] blur-[1px] floating-3" style="top: 60%; left: 20%;">
+    </div>
 
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 glass-nav border-b border-gray-100/50 transition-transform duration-300">
