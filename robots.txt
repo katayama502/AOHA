@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aoha-masuda.com/sitemap.xml

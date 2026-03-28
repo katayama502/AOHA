@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お品書き - Menu | 和soup curry・pasta AOHA | 益田市のスープカレーとパスタ</title>
-    <meta name="description" content="和soup curry・pasta AOHAのグランドメニュー。和の出汁が香るスープカレーから、こだわりのパスタ、期間限定の蟹メニューまで。益田市でのランチ・ディナーに。">
-    <meta name="keywords" content="AOHA, メニュー, スープカレー, パスタ, 蟹, 益田市, 島根県, ランチ, ディナー">
+    <title>益田市のランチメニュー | 和soup curry・pasta AOHA | スープカレー・パスタ</title>
+    <meta name="description" content="和soup curry・pasta AOHAのグランドメニュー。益田市でのランチ・ディナーに、和の出汁が香るスープカレーからこだわりのパスタまで。全メニューにサラダ・ドリンク付き。">
+    <meta name="keywords" content="益田市, ランチ, メニュー, スープカレー, パスタ, AOHA, 島根県, 和出汁">
 
     <!-- Canonical Tag -->
     <link rel="canonical" href="https://aoha-masuda.com/menu.html">
@@ -32,6 +32,55 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "和soup curry・pasta AOHA",
+      "image": "https://aoha-masuda.com/img/2.png",
+      "url": "https://aoha-masuda.com/menu.html",
+      "telephone": "0856-25-7565",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "あけぼの東町1-1",
+        "addressLocality": "益田市",
+        "addressRegion": "島根県",
+        "postalCode": "698-0024",
+        "addressCountry": "JP"
+      },
+      "servesCuisine": ["Soup Curry", "Pasta"],
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Grand Menu",
+        "mainEntityOfPage": "https://aoha-masuda.com/menu.html",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Soup Curry",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "AOHAスープ",
+                "offers": { "@type": "Offer", "price": "1600", "priceCurrency": "JPY" }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Pasta",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "ペスカトーレ",
+                "offers": { "@type": "Offer", "price": "1900", "priceCurrency": "JPY" }
+              }
+            ]
+          }
+        ]
+      }
+    }
+    </script>
     <style>
         .menu-list-item {
             transition: all 0.3s ease;
@@ -57,25 +106,25 @@
 
     <!-- Floating Background Layout -->
     <div class="fixed inset-0 pointer-events-none overflow-hidden flex justify-center items-center" style="z-index: 0;">
-        <img src="./img/2.png" alt="" class="absolute w-[30vh] h-[30vh] object-cover rounded-full opacity-[0.12] blur-[1px] floating-1" style="top: 10%; left: 5%;">
-        <img src="./img/5.png" alt="" class="absolute w-[40vh] h-[40vh] object-cover rounded-full opacity-[0.08] blur-[2px] floating-2" style="top: 30%; right: -5%;">
-        <img src="./img/8.png" alt="" class="absolute w-[35vh] h-[35vh] object-cover rounded-full opacity-[0.15] blur-[1px] floating-3" style="bottom: 10%; left: -5%;">
-        <img src="./img/12.png" alt="" class="absolute w-[50vh] h-[50vh] object-cover rounded-full opacity-[0.08] blur-[3px] floating-1" style="bottom: -15%; right: 15%;">
-        <img src="./img/14.png" alt="" class="absolute w-[25vh] h-[25vh] object-cover rounded-full opacity-[0.1] blur-[2px] floating-2" style="top: 15%; right: 25%;">
-        <img src="./img/16.png" alt="" class="absolute w-[35vh] h-[35vh] object-cover rounded-full opacity-[0.12] blur-[1px] floating-3" style="top: 60%; left: 20%;">
+        <img src="./img/2.png" alt="AOHAスープ（益田市スープカレー）" class="absolute w-[30vh] h-[30vh] object-cover rounded-full opacity-[0.12] blur-[1px] floating-1" style="top: 10%; left: 5%;">
+        <img src="./img/5.png" alt="彩り豊かなメニュー" class="absolute w-[40vh] h-[40vh] object-cover rounded-full opacity-[0.08] blur-[2px] floating-2" style="top: 30%; right: -5%;">
+        <img src="./img/8.png" alt="こだわりのスープカレーランチ" class="absolute w-[35vh] h-[35vh] object-cover rounded-full opacity-[0.15] blur-[1px] floating-3" style="bottom: 10%; left: -5%;">
+        <img src="./img/12.png" alt="益田市のランチタイムを彩る一皿" class="absolute w-[50vh] h-[50vh] object-cover rounded-full opacity-[0.08] blur-[3px] floating-1" style="bottom: -15%; right: 15%;">
+        <img src="./img/14.png" alt="絶品ペスカトーレパスタ" class="absolute w-[25vh] h-[25vh] object-cover rounded-full opacity-[0.1] blur-[2px] floating-2" style="top: 15%; right: 25%;">
+        <img src="./img/16.png" alt="和の出汁が香るパスタ" class="absolute w-[35vh] h-[35vh] object-cover rounded-full opacity-[0.12] blur-[1px] floating-3" style="top: 60%; left: 20%;">
     </div>
 
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 glass-nav border-b border-gray-100/50 transition-transform duration-300">
         <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
             <a href="index.html" class="flex items-center transition-opacity hover:opacity-80">
-                <img src="./img/aoha-logo.svg" alt="AOHA" class="h-10 md:h-12 w-auto">
+                <img src="./img/aoha-logo.svg" alt="和soup curry・pasta AOHA（益田市のランチ専門店）" class="h-10 md:h-12 w-auto">
             </a>
             <div class="hidden md:flex space-x-10 text-xs font-medium tracking-[0.2em] uppercase">
                 <a href="index.html#concept" class="nav-link">Concept</a>
                 <a href="menu.html" class="nav-link text-[var(--accent-color)]" style="border-bottom: 1px solid var(--accent-color);">Menu</a>
                 <a href="index.html#access" class="nav-link">Access</a>
-                <a href="https://www.google.com/maps/search/?api=1&query=AOHA+益田市" target="_blank" class="nav-link text-[var(--secondary-color)]">Map</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=AOHA+益田市" target="_blank" rel="noopener" class="nav-link text-[var(--secondary-color)]">Map</a>
             </div>
             <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none">☰</button>
         </div>
@@ -87,14 +136,14 @@
         <a href="index.html#concept" class="text-2xl font-serif tracking-widest menu-item">Concept</a>
         <a href="menu.html" class="text-2xl font-serif tracking-widest menu-item text-[var(--accent-color)]">Menu</a>
         <a href="index.html#access" class="text-2xl font-serif tracking-widest menu-item">Access</a>
-        <a href="https://www.google.com/maps/search/?api=1&query=AOHA+益田市" target="_blank" class="text-2xl font-serif tracking-widest menu-item">Map</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=AOHA+益田市" target="_blank" rel="noopener" class="text-2xl font-serif tracking-widest menu-item">Map</a>
     </div>
 
     <!-- Page Header -->
     <header class="pt-40 pb-20 px-6 fade-in">
         <div class="text-center">
             <p class="text-[var(--accent-color)] text-xs tracking-[0.5em] mb-4 uppercase">Grand Menu</p>
-            <h1 class="text-5xl md:text-6xl font-serif mb-6">お品書き</h1>
+            <h1 class="text-5xl md:text-6xl font-serif mb-6">益田市のおすすめランチメニュー</h1>
             <div class="w-12 h-px bg-[var(--accent-color)]/50 mx-auto"></div>
         </div>
     </header>
@@ -105,7 +154,7 @@
         <!-- Soup Curry -->
         <section class="fade-in">
             <div class="flex items-center gap-6 mb-8">
-                <h2 class="text-3xl font-serif text-[var(--secondary-color)]">🍛 スープカレー (SOUP CURRY)</h2>
+                <h2 class="text-3xl font-serif text-[var(--secondary-color)]">🍛 スープカレー (SOUP CURRY) ランチ</h2>
                 <div class="flex-grow h-px bg-gray-200"></div>
             </div>
             <div class="bg-white/80 p-8 md:p-12 rounded-custom shadow-xl shadow-gray-200/50 border border-white">
@@ -201,7 +250,7 @@
         <!-- Pasta -->
         <section class="fade-in">
             <div class="flex items-center gap-6 mb-8">
-                <h2 class="text-3xl font-serif text-[var(--secondary-color)]">🍝 パスタ (PASTA)</h2>
+                <h2 class="text-3xl font-serif text-[var(--secondary-color)]">🍝 パスタ (PASTA) ランチ</h2>
                 <div class="flex-grow h-px bg-gray-200"></div>
             </div>
             <div class="bg-white/80 p-8 md:p-12 rounded-custom shadow-xl shadow-gray-200/50 border border-white">
@@ -325,7 +374,7 @@
         <!-- A La Carte -->
         <section class="fade-in">
             <div class="flex items-center gap-6 mb-8">
-                <h2 class="text-3xl font-serif text-[var(--secondary-color)]">🥗 アラカルト (A LA CARTE)</h2>
+                <h2 class="text-3xl font-serif text-[var(--secondary-color)]">🥗 アラカルト・単品メニュー</h2>
                 <div class="flex-grow h-px bg-gray-200"></div>
             </div>
             <div class="bg-white/80 p-8 md:p-12 rounded-custom shadow-xl shadow-gray-200/50 border border-white">
@@ -416,7 +465,7 @@
                 <a href="index.html#concept" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">想い</a>
                 <a href="menu.html" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">お品書き</a>
                 <a href="index.html#access" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">アクセス</a>
-                <a href="https://www.instagram.com/aoha415?igsh=MXF4c2cyMDRjZTlpaw==" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">Instagram</a>
+                <a href="https://www.instagram.com/aoha415?igsh=MXF4c2cyMDRjZTlpaw==" target="_blank" rel="noopener" class="hover:text-[var(--accent-color)] transition-colors tracking-widest">Instagram</a>
             </div>
 
             <div class="flex justify-center flex-col items-center gap-8">
